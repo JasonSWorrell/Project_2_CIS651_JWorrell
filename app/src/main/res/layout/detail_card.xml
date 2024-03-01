@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:id="@+id/detail_layout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-181dp"
+        tools:layout_editor_absoluteY="-289dp"
+        android:padding="5dp">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            tools:context=".ui.MovieDetail.MovieDetailObjectFragment"
+            android:background="#aa808080">
+            <TableRow
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/movie_detail_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="55sp"
+                    android:text="Title"/>
+            </TableRow>
+            <TableRow
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/star_holder"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="start"
+                    android:contentDescription="@string/star_image"
+                    android:gravity="center"
+                    android:src="@drawable/star" />
+
+                <TextView
+                    android:id="@+id/movie_detail_stars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="55"
+                    android:textSize="35sp"
+                    android:padding="2dp"
+                    android:layout_gravity="end|fill"/>
+
+            </TableRow>
+            <TableRow
+                android:layout_gravity="center"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/movie_detail_poster"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/movie_poster"
+                    android:src="@drawable/pic_1"/>
+            </TableRow>
+
+            <TableRow android:layout_height="47dp">
+
+                <TextView
+                    android:id="@+id/movie_detail_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="0000"
+                    android:textSize="35sp"
+                    android:layout_gravity="start"/>
+
+                <TextView
+                    android:id="@+id/movie_detail_rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="35sp"
+                    android:text="R"
+                    android:layout_gravity="end" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/movie_detail_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="5"
+                    android:padding="5dp"
+                    android:text="@string/bullock"
+                    android:textStyle="bold"/>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
